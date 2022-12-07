@@ -1,33 +1,23 @@
 <template>
   <div>
-    <h1 v-text="hello" ref="he"></h1>
-    <button @click="showDOM()" ref="but">点我输出上方的DOM元素</button>
-    <School ref="sch" />
+    <el-row>
+      <el-button>默认按钮</el-button>
+      <el-button type="primary">主要按钮</el-button>
+      <el-button type="success">成功按钮</el-button>
+      <el-button type="info">信息按钮</el-button>
+      <el-button type="warning">警告按钮</el-button>
+      <el-button type="danger">危险按钮</el-button>
+    </el-row>
+
+    <el-date-picker v-model="value1" type="date" placeholder="选择日期">
+    </el-date-picker>
   </div>
 </template>
 
 <script>
-//引入school组件
-import School from "./components/School.vue";
 export default {
   name: "App",
-  components: {
-    School,
-  },
-  data() {
-    return {
-      hello: "欢迎学习Vue！",
-    };
-  },
-  methods: {
-    showDOM() {
-      console.log(this.$refs.he);
-      console.log(this.$refs.but);
-      console.log(this.$refs.sch);
-    },
-  },
 };
 </script>
-
 <style>
 </style>

@@ -1,7 +1,7 @@
 <template>
-  <div class="school">
-    <h1>学校名称：{{ SchoolName }}</h1>
-    <h2>学校地址：{{ address }}</h2>
+  <div class="demp">
+    <h2>学校名称{{ name }}</h2>
+    <h2>学生性别：{{ gender }}</h2>
   </div>
 </template>
 
@@ -10,15 +10,15 @@ export default {
   name: "School",
   data() {
     return {
-      SchoolName: "尚硅谷",
-      address: "地址",
+      name: "shagnguigu",
+      gender: "男",
     };
   },
 };
 </script>
 
 <style>
-.school {
+.demp {
   background-color: aquamarine;
 }
 </style>
